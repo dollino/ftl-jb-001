@@ -3,6 +3,7 @@ package animals;
 public class Animal {
     protected String name;
     protected Integer weight;
+    protected Integer currentPosition = 0;
 
     public Animal(String name, Integer weight) {
         this.name = name;
@@ -15,4 +16,9 @@ public class Animal {
     public void  voice(){
         System.out.println("Voice!!");
     }
+    protected void runForvard(Integer length){
+        this.currentPosition+= length;
+    }
+
+
 }
