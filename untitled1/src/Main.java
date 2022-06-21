@@ -41,8 +41,12 @@ public class Main {
          duck.voice();
          duck.takeoff();
          duck.isTheBirdFlying();
-          duck.landing();
+        duck.showSpeed();
+
+        duck.landing();
           duck.isTheBirdFlying();
+        duck.showSpeed();
+
     }
 
 }
