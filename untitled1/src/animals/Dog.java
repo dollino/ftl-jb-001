@@ -8,6 +8,14 @@ public class Dog extends Animal{
     public Dog() {
     }
 
+    public static Dog[] randomArray() {
+        Dog[] dogs = new Dog[3];
+        dogs[0] = Dog.of("Sharik", 4);
+        dogs[1] = Dog.of("Bubble", 1);
+        dogs[2] = Dog.of("Tuzic", 5);
+        return dogs;
+   }
+
     /**
      * Идем до позиции палки.Чтобы дойти до палки, нужно найти разницу между текущей позицией и позицией палки.
      * @param stickPosition-позиция палки
@@ -34,5 +42,14 @@ public class Dog extends Animal{
     @Override
     public void voice() {
         System.out.println("wow! ");
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", currentPosition=" + currentPosition +
+                '}';
     }
 }
