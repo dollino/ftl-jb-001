@@ -75,7 +75,7 @@ public class Main {
         dogsLinkedList.add(Dog.ofHomeless(10));
         dogsLinkedList.add(Dog.ofHomeless(10));
 
-        int indexLinkedList = 0;
+         int indexLinkedList = 0;
         while (indexLinkedList < dogsLinkedList.size()){
             System.out.println(dogsLinkedList.get(indexLinkedList) );
             indexLinkedList++;
