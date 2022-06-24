@@ -13,7 +13,39 @@ package animals;
         this.canFly = false;
     }
 
-    public Animal() {
+     public String getName() {
+         return name;
+     }
+
+     public void setName(String name) {
+         this.name = name;
+     }
+
+     public Integer getWeight() {
+         return weight;
+     }
+
+     public void setWeight(Integer weight) {
+         this.weight = weight;
+     }
+
+     public Integer getCurrentPosition() {
+         return currentPosition;
+     }
+
+     public void setCurrentPosition(Integer currentPosition) {
+         this.currentPosition = currentPosition;
+     }
+
+     public Boolean getCanFly() {
+         return canFly;
+     }
+
+     public void setCanFly(Boolean canFly) {
+         this.canFly = canFly;
+     }
+
+     public Animal() {
          this.canFly = false;
     }
     
