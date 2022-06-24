@@ -2,7 +2,12 @@ package animals;
 
 public class Bird extends Animal{
     protected Boolean flyModeActive = false;
-     public void takeoff(){
+
+    public Bird() {
+        this.canFly = true;
+    }
+
+    public void takeoff(){
          flyModeActive = true;
      }
       public void landing(){
