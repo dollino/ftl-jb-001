@@ -1,4 +1,5 @@
 import L001.HelloWorld;
+import L013.SwitchExample;
 import animals.Cat;
 import animals.Dog;
 import animals.Duck;
@@ -78,6 +79,10 @@ public class Main {
         while (indexLinkedList < dogsLinkedList.size()){
             System.out.println(dogsLinkedList.get(indexLinkedList) );
             indexLinkedList++;
+        }
+
+        for (int i=0; i<100; i++){
+            SwitchExample.run();
         }
 
 
