@@ -1,5 +1,6 @@
 import L001.HelloWorld;
 import L013.SwitchExample;
+import L019.StringExample;
 import animals.Cat;
 import animals.Dog;
 import animals.Duck;
@@ -93,6 +94,8 @@ public class Main {
         if(dog.getMoveType() == MoveType.WALK){
             System.out.println("может ходить");
         }
+
+        StringExample.run();
 
 
 
