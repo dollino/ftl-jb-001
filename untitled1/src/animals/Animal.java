@@ -1,6 +1,11 @@
 package animals;
 
- public abstract  class Animal {
+import java.util.Random;
+
+public abstract  class Animal {
+     public static class WeightException extends RuntimeException{
+
+     }
 
      public static class AnimalWeight{
 
@@ -18,7 +23,8 @@ package animals;
          private Integer value;
          private Weighttype weighttype;
 
-         public AnimalWeight(Integer value, Weighttype weighttype) {
+         public AnimalWeight(Integer value, Weighttype weighttype) throws WeightException {
+             if (value < 0) throw new WeightException();
              this.value = value;
              this.weighttype = weighttype;
          }
@@ -28,6 +34,7 @@ package animals;
          }
 
          public void setValue(Integer value) {
+             if(value <0) throw new WeightException();
              this.value = value;
          }
 
